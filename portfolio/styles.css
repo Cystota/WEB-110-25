@@ -1,0 +1,159 @@
+/* Keagan Fraser 3/17/2026 */
+@import "light.css";
+
+/* Primary Elements */
+html {
+    font-family: 'Google Sans Flex', sans-serif;
+    text-align: center;
+    background-color: var(--md-sys-color-inverse-on-surface);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer {
+    background: var(--md-sys-color-primary-container);
+    margin: 5px 0px;
+    border-radius: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+footer#alone {
+    border-radius: 24px;
+}
+
+/* The smaller sections that make up the main content */
+section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--md-sys-color-primary-container);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+section:first-child {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+section p {
+    text-align: left;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul.navigation {
+    padding-left: 0px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li {
+    background-color: var(--md-sys-color-tertiary-container);
+    border-radius: 10px;
+    padding: 0.8em;
+}
+
+nav li:first-child {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+nav li:last-child {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+li a:visited {
+    color: black;
+}
+
+/* Images */
+img {
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
+
+section img {
+    max-width: fit-content;
+}
+
+a img {
+    height: 2em;
+    margin: 0px;
+}
+
+/* List */
+ol,
+ul {
+    text-align: left;
+}
+
+ol li,
+ul li {
+    margin: 10px 0;
+}
+
+/* Page Titles */
+.title {
+    font-size: 4em;
+}
+
+/* DIV and their children */
+div#resume {
+    padding: 5%;
+}
+
+div.imgRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+/* home page exclusive modifications */
+h1#MainTitle {
+    font-size: 5em;
+    margin: 30% 0px;
+    color: white;
+}
+
+main p {
+    font-size: 1.3em;
+    text-align: left;
+    margin: .5em;
+}
+
+div#homePageImgBackground {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/Programming.avif");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
