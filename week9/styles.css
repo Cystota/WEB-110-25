@@ -1,0 +1,140 @@
+/* Keagan Fraser 3/30/26 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'arial', 'sans-serif';
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    max-width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: lightgrey
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #e3e3e3;
+}
+
+.hero img {
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.hero-text {
+    text-align: left;
+    max-width: 70%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.feature img {
+    max-width: 40%;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white
+}
+
+@media screen and (max-width: 728px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .hero img {
+        width: 200px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
