@@ -27,6 +27,6 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a:visited {
+a:visited {
     color: black;
 }
